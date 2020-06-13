@@ -1,0 +1,55 @@
+.projects {
+  width: 90%;
+  margin: auto;
+  min-height: 90vh;
+  @include flex(space-between, center, row);
+  text-align: center;
+  flex-wrap: wrap;
+  margin-bottom: 4rem;
+  
+  h2 {
+    margin: 5rem;
+    padding: 2rem 2rem 0rem 2rem;
+    color: $gray-text;
+  }
+
+  p {
+    margin-bottom: 4rem;
+  }
+  
+}
+
+.travelly,
+.elena-joy,
+.calculator,
+.meditation {
+  flex: 1 1 40rem;
+  padding: 2rem;
+
+  img {
+    border: 1px solid $gray-text;
+    border-radius: 2px;
+  }
+}
+
+#top-button {
+  color: white;
+  font-family: "M PLUS Rounded 1c", sans-serif;
+  background-color: $bg-color;
+  border: none;
+  display: none;
+  position: fixed;
+  bottom: 20px;
+  right: 30px;
+  z-index: 5;
+  font-size: 2rem;
+  padding: 1rem 2rem;
+  cursor: pointer;
+  border-radius: 4px;
+
+  &:hover {
+    background-color: #918dc2;
+  }
+}
+
+

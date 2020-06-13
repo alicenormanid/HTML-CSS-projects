@@ -1,0 +1,107 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <meta
+      name="description"
+      content="Alice Norman is a creative web designer and web developer available immediately 
+    for your website needs."
+    />
+    <link rel="icon" href="../icons/icon.svg" />
+
+    <link
+      href="https://fonts.googleapis.com/css2?family=M+PLUS+Rounded+1c:wght@400;800&family=Pacifico&display=swap"
+      rel="stylesheet"
+    />
+    <meta name="robots" content="index, follow" />
+
+    <link rel="stylesheet" href="../styles/style.css" />
+
+    <title>alice norman | web developer</title>
+  </head>
+
+  <body>
+    <header class="main-head">
+      <nav>
+        <div class="logo">
+          <img src="../icons/code.svg" alt="logo" />
+          <h1>alice</h1>
+        </div>
+
+        <ul>
+          <li><a href="../index.html">Home</a></li>
+          <li><a class="active" href="">My Projects</a></li>
+          <li><a href="../about/">About Me</a></li>
+          <li><a href="../contact/">Contact</a></li>
+
+        </ul>
+      </nav>
+    </header>
+
+    <section class="projects">
+      <div class="elena-joy">
+        <h2>Elena Joy Photography</h2>
+        <p>A single-page personal website with multiple scrolling sections and an elegant, modern vibe.</p>
+        <img src="../img/elenajoy-clip 1.png" alt="Elena Joy project" />
+      </div>
+
+      <div class="travelly">
+        <h2>Travelly Travel Agency</h2>
+        <p>A fun, colorful single-page business website with different sections, cards, moving parts, and more.</p>
+        <img src="../img/travelly-clip 1.png" alt="Travelly project" />
+      </div>
+
+      <div class="calculator">
+        <h2>Simple Calculator</h2>
+        <p>A simple, visually pleasing Javascript calculator with full functionality.</p>
+        <img src="../img/calculator-clip 1.png" alt="calculator project" />
+      </div>
+
+      <div class="meditation">
+        <h2>Meditation App</h2>
+        <p>A meditation assistant that plays sounds and background videos on a customizable timer.</p>
+        <img src="../img/meditation-clip 1 (1).png" alt="meditation project" />
+      </div>
+    </section>
+
+    <footer>
+      <h4>Alice Norman &copy; 2020</h4>
+
+      <h5>
+        icon made by
+        <a href="https://www.flaticon.com/authors/flat-icons" title="Flat Icons"
+          >Flat Icons</a
+        >
+        from
+        <a href="https://www.flaticon.com/" title="Flaticon">
+          www.flaticon.com</a
+        >
+      </h5>
+    </footer>
+
+    <script>
+      //Scroll to Top Button
+      function scrollFunction() {
+        if (
+          document.body.scrollTop > 100 ||
+          document.documentElement.scrollTop > 100
+        ) {
+          document.getElementById("top-button").style.display = "block";
+        } else {
+          document.getElementById("top-button").style.display = "none";
+        }
+      }
+
+      function topFunction() {
+        document.documentElement.scrollTo({ top: 0, behavior: "smooth" });
+      }
+
+      window.onscroll = () => {
+        scrollFunction();
+      };
+
+    </script>
+    <button onclick="topFunction()" id="top-button">^</button>
+  </body>
+</html>

@@ -1,0 +1,123 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <meta
+      name="description"
+      content="Alice Norman is a professional web designer and web developer available immediately 
+    for all of your website needs."
+    />
+    <link rel="icon" href="../icons/icon.svg" />
+
+    <link
+      href="https://fonts.googleapis.com/css2?family=M+PLUS+Rounded+1c:wght@400;800&family=Pacifico&display=swap"
+      rel="stylesheet"
+    />
+    <meta name="robots" content="index, follow" />
+
+    <link rel="stylesheet" href="../styles/style.css" />
+
+    <title>alice norman | web developer</title>
+  </head>
+
+  <body>
+    <header class="main-head">
+      <nav>
+        <div class="logo">
+          <img src="../icons/code.svg" alt="logo" />
+          <h1>alice</h1>
+        </div>
+
+        <ul>
+          <li><a href="../index.html">Home</a></li>
+          <li><a href="../projects/">My Projects</a></li>
+          <li><a class="active" href="">About Me</a></li>
+          <li><a href="../contact/">Contact</a></li>
+        </ul>
+      </nav>
+    </header>
+
+    <section class="about-text">
+      <div class="description">
+        <h1>About Me!</h1>
+        <div class="paragraph">
+          <p>
+            My name is Alice and I am a Canadian web developer currently
+            completing the last year of my Computer Science degree from the
+            University of Calgary. I have a passion for web development and
+            design and am self-taught in those respects. <br />
+            <br />
+            In addition to working daily with web development tools such as
+            WordPress, Javascript, HTML, and CSS, I am able to work in
+            Java, C, Python, and R languages. I am very familiar with Windows,
+            Android, Chrome OS, and Linux, and have some experience in iOS and
+            Mac OS. <br />
+            <br />
+
+            I am available to hire to create websites for your business from
+            scratch with HTML, CSS and Javascript or with the use of WordPress.
+            You can check out the <a href="../projects/">"Projects" page</a> to
+            see some of my work and how it was accomplished. If that sounds like
+            something you'd be interested in,
+            <a id="click-here" href="../contact">click here</a> to easily send
+            me a message and I'll give you a consultation, free of charge!
+            <br />
+            <br />
+            As of now, I do not offer
+            <a href="https://www.hostgator.com/">website hosting</a> or
+            <a id="domain-names" href="https://www.godaddy.ca">domain names</a>,
+            but that is something that will be added in the near future -- stay
+            tuned!
+          </p>
+        </div>
+      </div>
+
+      <div class="button-container">
+        <button id="about-button" onclick="window.location.href = '../contact';">
+          need a website?
+        </button>
+      </div>
+  
+      <footer>
+        <h4>Alice Norman &copy; 2020</h4>
+  
+        <h5>
+          icon made by
+          <a href="https://www.flaticon.com/authors/flat-icons" title="Flat Icons"
+            >Flat Icons</a
+          >
+          from
+          <a href="https://www.flaticon.com/" title="Flaticon">
+            www.flaticon.com</a
+          >
+        </h5>
+      </footer>
+    </section>
+
+    <script>
+      //Scroll to Top Button
+     
+      function scrollFunction() {
+        if (
+          document.body.scrollTop > 100 ||
+          document.documentElement.scrollTop > 100
+        ) {
+          document.getElementById("top-button").style.display = "block";
+        } else {
+          document.getElementById("top-button").style.display = "none";
+        }
+      }
+
+      function topFunction() {
+        document.documentElement.scrollTo({ top: 0, behavior: "smooth" });
+      }
+
+      window.onscroll = () => {
+        scrollFunction();
+      };
+
+    </script>
+    <button onclick="topFunction()" id="top-button">^</button>
+  </body>
+</html>

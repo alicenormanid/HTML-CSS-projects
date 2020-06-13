@@ -1,0 +1,63 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0"> <!--scales website until it fills the whole screen, makes responsive on mobile/browsers--> 
+    <title>The Banana Bunch</title>
+    <link rel="stylesheet" href="/style.css">
+   
+</head>
+<body>
+    <h1>Banana Recipes, Fresh off the Bunch!</h1>
+    <h2>If you're anything like us, you're bananas for a good recipe!</h2>
+    <p>Welcome to the Banana Bunch. Here you will find a whole lot of deliciously mouthwatering recipes, including everything from banana bread to stir fry. <mark>Enjoy! </mark><a target="_blank" href="https://www.countryliving.com/food-drinks/g650/apple-recipes/">Want some apple recipes instead?</a>
+    </p>
+    
+    <a target="_blank" href="https://www.bonappetit.com/recipes/healthy/slideshow/green-smoothies-juice-recipes"><img width="50"src="/iconmonstr-fast-food-20.svg"></a>
+    <img src="img/background-banana-blue-close-up-616839.jpg" width="500">
+    <img src="/video.gif" width="500">
+
+    <video autoplay loop src="./mp4/kettle_cingraph.mp4" type="video/mp4" width="500"> 
+    </video> 
+
+    <!-- FORM FOR SUBMITTING -->
+    <form target="_blank" action="/contact.html"> <!--moves user to contact.html page after submit the form-->
+        <label for="user">Username</label>
+        <input maxLength="16" minlength="5" name="user" type="text" id="user" placeholder="Min. 5 characters"/> 
+
+        <label for="email">Email *</label>
+        <input maxLength="60" minlength="5" name="email" type="email" id="email" placeholder="Min. 5 characters" required/> <!--using type of email enforces email format-->
+       
+        <label for="product">Select your recipe:</label>
+        <select name="product" id="product">
+            <option value="">No selection</option>
+            <option value="bbread">Banana bread</option>
+            <option value="cake">Banana cream cake</option>
+            <option value="smoothie">Banana Str. Smoothie</option>
+        </select>
+
+        <label for="message">Leave a message for us:</label>
+        <textarea maxLength="250" name="message" id="message" cols="30" rows="10" placeholder="Say something naughty or nice."></textarea>
+
+        <label for="rating">How did we do?</label>
+        <input type="radio" name="rating" value="1">
+        <input type="radio" name="rating" value="2">
+        <input type="radio" name="rating" value="3">
+        
+        <button type="submit">Submit form</button> 
+        <!--type=submit actually submits form (using action attr in form tag) only inputs with names get submitted-->
+    </form>
+
+    <h1 id="logo">Recipes Below!</h1>
+    <h2>Banana Bread Recipe</h2>
+    <p class="article">Lorem ipsum dolor sit amet consectetur adipisicing elit. Culpa inventore dolor beatae et itaque. Hic cumque laboriosam, perspiciatis molestiae voluptate accusantium neque adipisci quidem quae quia blanditiis! Vero, saepe iusto?</p>
+
+    <h2>Banana Cream Cake Recipe</h2>
+    <p class="article">Lorem ipsum dolor sit amet consectetur adiisicing elit. Itaque cupiditate illum quo harum corrupti? Libero ratione ipsum veniam sapiente assumenda esse numquam modi quibusdam quia sint odio asperiores tempora, aut corporis nulla excepturi ipsam inventore sed recusandae vitae possimus. </p>
+
+    <h2>Banana Strawberry Smoothie Recipe</h2>
+    <p class="article">Lorem ipsum dolor sit amet consectetur, adipisicing elit. Fugit ipsa iure sint sequi doloremque, asperiores voluptatem ab perferendis tempore quos reprehenderit blanditiis, aliquid optio iste ad distinctio? Assumenda!</p>
+
+    <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Quas praesentium accusantium corporis officiis! Sed mollitia, quis aut at perspiciatis illum.</p>
+</body>
+</html>

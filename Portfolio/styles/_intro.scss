@@ -1,0 +1,209 @@
+.main-head {
+  width: 100%;
+  margin: 0 0 0 auto;
+}
+
+nav {
+  @include flex(space-between, center, row);
+  min-height: 10vh;
+  width: 100%;
+  flex-wrap: wrap;
+  font-size: $header1;
+  background-color: $yellow;
+
+  .logo {
+    @include flex(flex-start, center, row);
+    flex: 1 1 10rem;
+    margin-left: 8rem;
+
+    h1 {
+      margin: 2rem;
+      color: $gray-text;
+      font-family: "Pacifico", cursive;
+    }
+
+  }
+
+  ul {
+    @include flex(space-around, center, row);
+    flex: 1 1 40rem;
+
+    a:hover {
+      cursor: pointer;
+    }
+  }
+}
+
+.intro {
+  min-height: 90vh;
+  width: 90%;
+  margin: auto;
+  flex-wrap: wrap;
+  @include flex(space-between, center, row);
+
+  h2 {
+    font-size: 8rem;
+    padding-top: 1rem;
+    color: $main-red;
+    flex: 2 1 60rem;
+  }
+
+  h3 {
+    font-size: 6rem;
+    padding: 2rem 0rem;
+    color: $gray-text;
+  }
+
+  p {
+    padding: 2rem 0rem;
+    font-size: 2rem;
+    color: $gray-text;
+  }
+
+  .lead-button {
+    color: white;
+    padding: 1rem 2rem;
+    margin: 2rem 0rem;
+    border: none;
+    background-color: $bg-color;
+    border-radius: 10px;
+    font-family: "M PLUS Rounded 1c", sans-serif;
+    cursor: pointer;
+
+    &:hover {
+      background-color: #918dc2;
+    }
+  }
+}
+
+.splash {
+  position: absolute;
+  top: 0%;
+  right: -5%;
+  height: 100%;
+  width: 80vw;
+  z-index: -1;
+}
+
+.intro-social {
+  margin: 2rem 0rem;
+}
+
+.intro-text,
+.intro-images {
+  flex: 1 1 30rem;
+}
+
+/*ACTIVE STATUS OF NAV LINKS (HIGHLIGHT)*/
+.active {
+  background: $gray-text;
+  color: white;
+  padding: 1rem 3rem;
+  border-radius: 2rem;
+}
+
+/*SVG PARTS*/
+#steam {
+  animation: steamAnimation 5s ease-in-out infinite;
+}
+
+#list-3 {
+  animation: listInAnimation 4s ease-in-out infinite;
+}
+
+#list-1 {
+  animation: listOutAnimation 6s ease 2s infinite;
+}
+
+#bar-3 {
+  animation: barInAnimation 5s ease-in-out infinite;
+}
+
+#Left-arm {
+  animation: armAnimation 2s ease-in-out alternate-reverse infinite;
+}
+
+#Right-arm {
+  animation: armAnimation 3s ease-in-out alternate-reverse infinite;
+}
+
+#bar-1,
+#bar-2,
+#bar-3 {
+  transform: translate(10%, 20%);
+}
+
+#left-line {
+  display: none;
+}
+
+/*ANIMATIONS*/
+@keyframes steamAnimation {
+  0% {
+    opacity: 0%;
+  }
+
+  50% {
+    opacity: 60%;
+  }
+
+  100% {
+    opacity: 20%;
+  }
+}
+
+@keyframes listInAnimation {
+  0% {
+    transform: translateX(100%);
+  }
+
+  50% {
+    transform: translateX(0%);
+    opacity: 100%;
+  }
+
+  100% {
+    opacity: 0%;
+  }
+}
+
+@keyframes listOutAnimation {
+  0% {
+    opacity: 100%;
+  }
+
+  100% {
+    opacity: 0%;
+    transform: translateX(-100%);
+  }
+}
+
+@keyframes barInAnimation {
+  0% {
+    transform: translateX(-100%);
+  }
+
+  50% {
+    transform: translateX(10%);
+    opacity: 100%;
+  }
+
+  100% {
+    transform: translateX(100%);
+    opacity: 0%;
+  }
+}
+
+@keyframes armAnimation {
+  0% {
+    transform: rotateX(0deg);
+  }
+
+  50% {
+    transform: rotateX(10deg);
+  }
+
+  100% {
+    transform: rotateX(0deg);
+  }
+}

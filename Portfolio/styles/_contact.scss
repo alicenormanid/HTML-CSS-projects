@@ -1,0 +1,76 @@
+.form-section {
+  font-family: "M PLUS Rounded 1c", sans-serif;
+  min-height: 80vh;
+  @include flex(center, center, row);
+  margin-top: 0rem;
+  flex: 1 1 auto;
+
+  form {
+    padding: 8rem 10rem;
+    margin: 10rem;
+    @include flex(center, center, column);
+    border-radius: 2rem;
+    background-color: $main-red;
+
+    input,
+    textarea {
+      padding: 1rem;
+      border-radius: 4px;
+      margin: 2rem;
+
+      &:focus {
+        outline: 2px solid $bg-color;
+      }
+    }
+
+    textarea {
+      font-family: "M PLUS Rounded 1c", sans-serif;
+      font-size: 2rem;
+      padding: 1rem;
+    }
+
+    button {
+      width: 90%;
+      padding: 2rem;
+      background-color: $gray-text;
+      border: none;
+      border-radius: 4px;
+      color: white;
+      font-family: "M PLUS Rounded 1c", sans-serif;
+      cursor: pointer;
+
+      &:focus {
+        background-color: $gray-text;
+      }
+
+      &:hover {
+        background-color: rgb(126, 97, 97);
+
+      }
+    }
+  }
+}
+
+.sell-text {
+  margin: 0rem;
+  padding: 0rem;
+}
+
+.sell-text h2,
+p {
+  color: $gray-text;
+  position: relative;
+  text-align: center;
+  // margin: 0rem 0rem 0rem 6rem;
+}
+
+.sell-text h2 {
+  transform: translate(0, 80%);
+  margin: 0rem 4rem 4rem 4rem;
+
+}
+
+.sell-text p {
+  transform: translate(0, 150%);
+  margin-bottom: 6rem;
+}

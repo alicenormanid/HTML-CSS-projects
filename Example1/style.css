@@ -1,0 +1,80 @@
+img{
+    height: 2rem;
+}
+
+*{
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+
+a{
+    color: black;
+    text-decoration: none;
+}
+
+nav ul{
+    display: flex;
+    justify-content: space-around;
+    align-items: center;
+    min-height: 10vh;
+    padding: 1rem;
+    background-color: lightblue;
+
+}
+
+.hero{
+    min-height: 90vh;
+    background-image: url("/silver-and-black-laptop-computer-1229861\ \(1\).jpg");
+    background-size: cover;
+    background-position: center;
+    color:white;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+}
+
+.hero h2{
+    text-align: center;
+    margin: 2rem;
+}
+
+.hero button{
+    padding: 1rem;
+    background-color: lightblue;
+    border: none;
+}
+
+.intro{
+    display: flex;
+    flex-wrap: wrap;
+}
+
+.intro img{
+    width: 100%;
+    height: 100%;
+}
+
+.intro-img {
+    flex: 1 1 20rem;
+}
+
+.intro-text{
+    background-color: antiquewhite;
+    flex: 1 1 20rem; 
+    display: flex;
+    flex-direction: column;
+    align-items:center;
+    justify-content: center;
+}
+
+.intro-text h2{
+    padding: 2rem;
+}
+
+.intro-text p{
+    padding: 1rem;
+}
+

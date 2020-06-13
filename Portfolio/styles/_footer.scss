@@ -1,0 +1,30 @@
+footer {
+  background: $yellow;
+  color: $gray-text;
+  padding: 0% 5%;
+  margin-top: 4rem;
+  min-height: 10vh;
+  bottom: 0;
+  width: 100%;
+
+  @include flex(flex-start, center, row);
+
+  ul {
+    flex: 1 1 40rem;
+    @include flex(space-around, center, row);
+  }
+
+  h4 {
+    flex: 1 1 40rem;
+    font-family: "Pacifico", cursive;
+  }
+
+  h5 {
+    font-size: 1.5rem;
+
+    a {
+      font-size: 1.5rem;
+      text-decoration: underline;
+    }
+  }
+}

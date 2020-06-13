@@ -1,0 +1,47 @@
+.about-text {
+  padding: 2rem;
+  // margin: 2rem 1rem 0rem 2rem;
+  height: 80vh;
+  font-size: 75%;
+  flex: 1 1 auto;
+
+  a {
+    text-decoration: underline;
+  }
+
+  h1 {
+    padding: 2rem;
+    margin-left: 4rem;
+    color: $gray-text;
+    text-align: left;
+  }
+
+  p {
+    margin-left: 6rem;
+    text-align: left;
+
+  }
+}
+
+.button-container {
+  min-height: 20vh;
+  text-align: center;
+  padding: 0rem;
+
+  #about-button {
+    color: white;
+    background-color: $bg-color;
+    border: none;
+    border-radius: 4px;
+    padding: 1rem;
+    margin-top: 4rem;
+
+    cursor: pointer;
+    text-align: center;
+    font-family: "M PLUS Rounded 1c", sans-serif;
+
+    &:hover {
+      background-color: #918dc2;
+    }
+  }
+}
