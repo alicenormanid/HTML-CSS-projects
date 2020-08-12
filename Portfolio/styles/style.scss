@@ -29,6 +29,7 @@ $yellow: #eeb945;
 @import "contact";
 @import "footer";
 @import "about";
+@import "todo";
 
 @media screen and (max-width: 1350px) {
   html {
@@ -48,10 +49,11 @@ $yellow: #eeb945;
     width: 100%;
   }
 
-  .elena-joy,
+  .agape,
   .travelly,
   .calculator,
-  .meditation {
+  .meditation,
+  .todo-app {
     flex: 1 1 50rem;
 
     img {
@@ -132,5 +134,4 @@ $yellow: #eeb945;
   .about-text {
     height: 100vh;
   }
-
 }

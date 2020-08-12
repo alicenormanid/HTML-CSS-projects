@@ -10,7 +10,7 @@
     margin: 10rem;
     @include flex(center, center, column);
     border-radius: 2rem;
-    background-color: $main-red;
+    background-color: rgba(218,87,87,0.8);
 
     input,
     textarea {

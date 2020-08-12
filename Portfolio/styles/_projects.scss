@@ -6,7 +6,7 @@
   text-align: center;
   flex-wrap: wrap;
   margin-bottom: 4rem;
-  
+
   h2 {
     margin: 5rem;
     padding: 2rem 2rem 0rem 2rem;
@@ -15,20 +15,32 @@
 
   p {
     margin-bottom: 4rem;
+    margin-left: 8rem;
+    margin-right: 8rem;
   }
-  
 }
 
 .travelly,
-.elena-joy,
+.agape,
 .calculator,
-.meditation {
+.meditation,
+.todo-app {
   flex: 1 1 40rem;
   padding: 2rem;
 
   img {
     border: 1px solid $gray-text;
     border-radius: 2px;
+    height: 50vh;
+    transition: all 0.3s ease-in-out;
+
+    &:hover {
+      height: 60vh;
+    }
+  }
+
+  a {
+    text-decoration: underline;
   }
 }
 
@@ -51,5 +63,3 @@
     background-color: #918dc2;
   }
 }
-
-
